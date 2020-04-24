@@ -11,7 +11,7 @@ class FoodsDetail extends Component {
 
     componentDidMount () {
         const id = this.props.match.params.foodId
-        fetch(`http://react-webinar.herokuapp.com/${id}`)
+        fetch(`https://react-webinar.herokuapp.com/${id}`)
             .then(response => response.json())
             .then(foodsDetails => this.setState({ foods: foodsDetails }))
             .catch(error => console.log(error))

@@ -10,7 +10,7 @@ class FoodsIndex extends Component {
     }
 
     componentDidMount () {
-        fetch('http://react-webinar.herokuapp.com/')
+        fetch('https://react-webinar.herokuapp.com/')
             .then(response => response.json())
             .then(foodsArray => this.setState({ foods: foodsArray }))
             .catch(error => console.log(error))
