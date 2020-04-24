@@ -47,7 +47,7 @@ class FoodsIndex extends Component {
                                         <p>Precio: {food.price} | Stock: {food.stock} | Kcal: {food.kcal}</p>
                                     </td>
                                     <td>
-                                        <p>Precio: {food.price} € | Stock disponible: {food.stcok} uds.
+                                        <p>Precio: {food.price} € | Stock disponible: {food.stock} uds.
                                         <Link className="btn btn-sm btn-outline-dark" to={`/details/${food._id}`}>Ver detalles</Link></p>
                                     </td>
                                 </tr>

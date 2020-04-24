@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="md">
-            <Navbar.Brand as="div"><Link to="/">Veggie stock corner</Link></Navbar.Brand>
+            <Navbar.Brand as="div"><Link className="link" to="/">Veggie stock corner</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
