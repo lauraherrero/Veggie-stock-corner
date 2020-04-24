@@ -38,7 +38,7 @@ class FoodsIndex extends Component {
                                 {this.state.foods.map(food => 
                                 <tr key={food._id}>
                                     <td>
-                                        <img src={`./img/${food.img}`} alt={food.name}/>
+                                        <img src={food.img} alt={food.name}/>
                                     </td>
                                     <td>
                                         <p>{food.name}</p>

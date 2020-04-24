@@ -35,7 +35,7 @@ class FoodsDetail extends Component {
             <Row>
                 <Col md={4}>
                 <h1>{this.state.foods.name}</h1>
-                <img className="food-detail-img" src={`/img/${this.state.foods.img}`} alt={this.state.foods.name} />
+                <img className="food-detail-img" src={this.state.foods.img} alt={this.state.foods.name} />
                 </Col>
                 <Col md={8}>
                     <h2>Especificaciones del alimento</h2>
