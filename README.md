@@ -18,3 +18,4 @@ CSS
 2.- Introduce 'npm install' in the terminal <br />
 3.- Introduce 'npm start' in the terminal
   Open http://localhost:3000 to view it in the browser.
+
