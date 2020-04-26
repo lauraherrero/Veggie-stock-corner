@@ -35,7 +35,7 @@ class FoodsDetail extends Component {
             <Row>
                 <Col md={4}>
                 <h1>{this.state.foods.name}</h1>
-                <img className="food-detail-img" src={`/img/${this.state.foods.img}`} alt={this.state.foods.name} />
+                <img className="food-detail-img" src={`../img/${this.state.foods.img}`} alt={this.state.foods.name} />
                 </Col>
                 <Col md={8}>
                     <h2>Especificaciones del alimento</h2>
@@ -59,8 +59,8 @@ class FoodsDetail extends Component {
                             <hr />
                             <p>{this.state.foods.name} procedente de:</p>
                             <ul>
-                                {this.state.foods.origin.map(country => 
-                                    <li>{country}</li>)}
+                                {this.state.foods.origin.map((country, id) => 
+                                    <li key={id}>{country}</li>)}
                             </ul>
                         </Tab>
                         <Tab eventKey="Stock" title="Stock">
